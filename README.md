@@ -11,12 +11,6 @@ A dynamic web application allowing users to explore global airline, airport, and
 ![Screenshot of Main Search UI](image.png)
 *Main search interface*
 
-![Screenshot of Map with Routes](placeholder_screenshot_map.png)
-*Example map visualization with airports and routes*
-
-![Screenshot of Airport Details](placeholder_screenshot_details.png)
-*Airport details display with real-time weather*
-
 ---
 
 ## Features
