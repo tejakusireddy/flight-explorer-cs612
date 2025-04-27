@@ -1,0 +1,116 @@
+/* @tailwind base; */
+/* @tailwind components; */
+/* @tailwind utilities; */
+
+/* --- General Enhancements --- */
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  /* --- Hero Section --- */
+  .hero-section {
+    background-image: url('https://images.unsplash.com/photo-1569154941061-e231b4725ef1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80'); /* Example image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Optional parallax effect */
+  }
+  
+  .hero-overlay {
+    /* Gradient overlay for text contrast */
+    background: linear-gradient(to bottom, rgba(0, 21, 41, 0.6), rgba(0, 52, 102, 0.8));
+  }
+  
+  h1.text-shadow {
+      /* Subtle text shadow for title */
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+  }
+  
+  
+  /* --- Search Form Specifics --- */
+  /* Style the select arrow (might need browser prefixes for full compatibility) */
+  select {
+    appearance: none;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%236B7280%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E');
+    background-repeat: no-repeat;
+    background-position: right 0.9rem center;
+    background-size: 0.7em;
+    padding-right: 2.5rem; /* Make space for arrow */
+  }
+  
+  
+  /* --- Results Section Styling --- */
+  #resultSection h2, #resultSection h3 {
+    color: #1e40af; /* Darker Blue Heading */
+    font-weight: 600;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #e5e7eb; /* light gray border */
+    margin-bottom: 1rem;
+  }
+  
+  #resultSection h2 {
+      font-size: 1.5rem; /* text-2xl */
+  }
+  #resultSection h3 {
+      font-size: 1.25rem; /* text-xl */
+  }
+  
+  #resultSection ul {
+    list-style-position: outside;
+    margin-left: 0.5rem; /* Adjust if needed */
+  }
+  
+  #resultSection li {
+      padding-left: 0.5rem;
+      margin-bottom: 0.3rem;
+  }
+  
+  /* Table Styling */
+  #resultSection table {
+      width: 100%;
+      border-collapse: collapse; /* Ensure borders connect cleanly */
+      margin-top: 0.5rem;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  }
+  
+  #resultSection th,
+  #resultSection td {
+    border: 1px solid #e5e7eb; /* border-gray-200 */
+    padding: 0.75rem 1rem; /* py-3 px-4 */
+    text-align: left;
+    vertical-align: middle;
+  }
+  
+  #resultSection thead th {
+    background-color: #f9fafb; /* bg-gray-50 */
+    font-weight: 600; /* font-semibold */
+    color: #374151; /* text-gray-700 */
+    font-size: 0.875rem; /* text-sm */
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  
+  /* Table row striping */
+  #resultSection tbody tr:nth-child(even) {
+    background-color: #f9fafb; /* bg-gray-50 */
+  }
+  #resultSection tbody tr:hover {
+    background-color: #eff6ff; /* bg-blue-50 */
+  }
+  
+  
+  /* --- Autocomplete Dropdown --- */
+  .autocomplete-dropdown {
+      border-color: #d1d5db; /* border-gray-300 */
+  }
+  
+  .autocomplete-dropdown > div { /* Targeting suggestion items */
+      border-bottom: 1px solid #f3f4f6; /* border-gray-100 */
+  }
+  .autocomplete-dropdown > div:last-child {
+      border-bottom: none;
+  }
+  
+  .autocomplete-dropdown strong { /* Styling the highlighted part */
+      color: #2563eb; /* text-blue-600 */
+  }
